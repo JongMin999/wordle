@@ -1,0 +1,28 @@
+@import "main.css";
+@import "footer.css";
+@import "reset.css";
+
+.info-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info-bar-menu {
+  width: 131.25px;
+}
+.info-bar-menu img {
+  width: 40px;
+}
+.Wordle {
+  font-size: 30px;
+  font-weight: bold;
+}
+.info-bar-options img {
+  width: 40px;
+}
+.info-bar-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="css/header.css" />
+    <style>
+      .board-key.correct {
+        background-color: #6aaa64;
+      }
+      .board-key.incorrect {
+        background-color: #c9b458;
+      }
+      @keyframes correctAnimation {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="info-bar">
+        <div class="info-bar-menu">
+          <img src="assets/menu.svg" alt="menu" />
+        </div>
+        <div class="Wordle">Wordle</div>
+        <div class="info-bar-options">
+          <img src="assets/qna.svg" alt="qna" />
+          <img src="assets/chart-bar.svg" alt="chart-bar" />
+          <img src="assets/cog.svg" alt="cog" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="timer">00:00</div>
+      <div class="board-row row-0">
+        <div class="board-block" data-index="00"></div>
+        <div class="board-block" data-index="01"></div>
+        <div class="board-block" data-index="02"></div>
+        <div class="board-block" data-index="03"></div>
+        <div class="board-block" data-index="04"></div>
+      </div>
+      <div class="board-row row-1">
+        <div class="board-block" data-index="10"></div>
+        <div class="board-block" data-index="11"></div>
+        <div class="board-block" data-index="12"></div>
+        <div class="board-block" data-index="13"></div>
+        <div class="board-block" data-index="14"></div>
+      </div>
+      <div class="board-row row-2">
+        <div class="board-block" data-index="20"></div>
+        <div class="board-block" data-index="21"></div>
+        <div class="board-block" data-index="22"></div>
+        <div class="board-block" data-index="23"></div>
+        <div class="board-block" data-index="24"></div>
+      </div>
+      <div class="board-row row-3">
+        <div class="board-block" data-index="30"></div>
+        <div class="board-block" data-index="31"></div>
+        <div class="board-block" data-index="32"></div>
+        <div class="board-block" data-index="33"></div>
+        <div class="board-block" data-index="34"></div>
+      </div>
+      <div class="board-row row-4">
+        <div class="board-block" data-index="40"></div>
+        <div class="board-block" data-index="41"></div>
+        <div class="board-block" data-index="42"></div>
+        <div class="board-block" data-index="43"></div>
+        <div class="board-block" data-index="44"></div>
+      </div>
+      <div class="board-row row-5">
+        <div class="board-block" data-index="50"></div>
+        <div class="board-block" data-index="51"></div>
+        <div class="board-block" data-index="52"></div>
+        <div class="board-block" data-index="53"></div>
+        <div class="board-block" data-index="54"></div>
+      </div>
+    </main>
+    <footer>
+      <div class="board-keyboard1">
+        <div class="board-key" data-key="Q">Q</div>
+        <div class="board-key" data-key="w">W</div>
+        <div class="board-key" data-key="E">E</div>
+        <div class="board-key" data-key="R">R</div>
+        <div class="board-key" data-key="T">T</div>
+        <div class="board-key" data-key="Y">Y</div>
+        <div class="board-key" data-key="U">U</div>
+        <div class="board-key" data-key="I">I</div>
+        <div class="board-key" data-key="O">O</div>
+        <div class="board-key" data-key="P">P</div>
+      </div>
+      <div class="board-keyboard2">
+        <div class="board-key" data-key="A">A</div>
+        <div class="board-key" data-key="S">S</div>
+        <div class="board-key" data-key="D">D</div>
+        <div class="board-key" data-key="F">F</div>
+        <div class="board-key" data-key="G">G</div>
+        <div class="board-key" data-key="H">H</div>
+        <div class="board-key" data-key="J">J</div>
+        <div class="board-key" data-key="K">K</div>
+        <div class="board-key" data-key="L">L</div>
+      </div>
+      <div class="board-keyboard3">
+        <div class="board-key-enter" data-key="ENTER">ENTER</div>
+        <div class="board-key" data-key="Z">Z</div>
+        <div class="board-key" data-key="X">X</div>
+        <div class="board-key" data-key="C">C</div>
+        <div class="board-key" data-key="V">V</div>
+        <div class="board-key" data-key="B">B</div>
+        <div class="board-key" data-key="N">N</div>
+        <div class="board-key" data-key="M">M</div>
+        <div class="board-key-delete" data-key="delete">
+          <img src="assets/delete.svg" alt="delete" />
+        </div>
+      </div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

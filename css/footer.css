@@ -1,0 +1,59 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.board-keyboard1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.board-keyboard2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.board-keyboard3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: 2px solid #d3d6da;
+  width: 40px;
+  height: 30px;
+}
+
+.board-key-enter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: smaller;
+  border: 2px solid #d3d6da;
+  width: 60px;
+  height: 30px;
+}
+
+.board-key-delete {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  border: 2px solid #d3d6da;
+  width: 60px;
+  height: 30px;
+}
+
+.board-key-delete img {
+  max-width: 100%;
+  max-height: 100%;
+}
